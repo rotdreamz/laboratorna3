@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Головна{% endblock %}
+{% block content %}
+    <h1 class="text-3xl md:text-5xl font-bold mt-6">Волинь: озера, ліси та старовинні замки</h1>
+    <p class="mt-4 text-lg">Волинь розташована на північному заході України. Її обласний центр — Луцьк. Тут багато озер, лісів і історичних місць, тож край добре підходить і для відпочинку, і для подорожей.</p>
+
+    <!-- 1 колонка на телефоні, 3 колонки на великих екранах -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+        <div class="bg-white p-4 rounded shadow">
+            <h2 class="font-bold text-xl">Озера</h2>
+            <p>Шацькі озера та Світязь, найглибше озеро України.</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+            <h2 class="font-bold text-xl">Історія</h2>
+            <p>Замок Любарта в Луцьку та давні міста краю.</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+            <h2 class="font-bold text-xl">Природа</h2>
+            <p>Ліси, болота й річки, де легко відпочити від міста.</p>
+        </div>
+    </div>
+
+    <a href="{{ url_for('places') }}" class="inline-block mt-8 bg-emerald-800 text-white px-5 py-3 rounded hover:bg-emerald-700">Переглянути місця</a>
+{% endblock %}

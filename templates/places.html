@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Місця{% endblock %}
+{% block content %}
+    <h1 class="text-3xl font-bold mt-6">Місця, які варто побачити</h1>
+
+    <!-- 1 колонка на телефоні, 2 на планшеті -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+        <article class="bg-white p-4 rounded shadow">
+            <h2 class="font-bold text-xl">Замок Любарта, Луцьк</h2>
+            <p class="mt-2">Середньовічна фортеця в центрі міста, одна з візитівок Волині. Всередині є музеї й оглядові вежі.</p>
+        </article>
+        <article class="bg-white p-4 rounded shadow">
+            <h2 class="font-bold text-xl">Озеро Світязь</h2>
+            <p class="mt-2">Найглибше озеро України, місце відпочинку з піщаними пляжами та соснами.</p>
+        </article>
+        <article class="bg-white p-4 rounded shadow">
+            <h2 class="font-bold text-xl">Шацький національний парк</h2>
+            <p class="mt-2">Територія з десятками озер, лісами та болотами. Тут прокладено пішохідні та велосипедні маршрути.</p>
+        </article>
+        <article class="bg-white p-4 rounded shadow">
+            <h2 class="font-bold text-xl">Володимир</h2>
+            <p class="mt-2">Одне з найстаріших міст України. Тут збереглися давні храми й оборонні вали.</p>
+        </article>
+        <article class="bg-white p-4 rounded shadow">
+            <h2 class="font-bold text-xl">Ковель</h2>
+            <p class="mt-2">Місто на Волині, відоме своєю залізничною історією. Тут можна побачити історичні храми, пам’ятники та старовинні будівлі.</p>
+        </article>
+        <article class="bg-white p-4 rounded shadow">
+            <h2 class="font-bold text-xl">Маневичі</h2>
+            <p class="mt-2">Містечко на Волині, оточене лісами. Тут можна насолодитися природою та відпочити від міської метушні.</p>
+        </article>
+    </div>
+{% endblock %}
